@@ -1,4 +1,7 @@
 /* color palette */
+.container{
+    height: 100%;
+}
 .bg_mediaplayer{
     background-color: rgba(40, 40, 40, 1);
 }
@@ -60,9 +63,7 @@
 #persinfo a{
     font-size: 1.5rem;
 }
-#persinfo{
-   
-}
+
 #create{
     font-size: 1.25rem;
 }
@@ -70,6 +71,12 @@
     padding-bottom: 0.75rem;
 }
 
+/* main */
+main {
+    background-color: red;
+    height: 2000px;
+    overflow-y: auto;
+}
 /* footer */
 .media_player{
     height: calc(100vh - 1010px);
@@ -78,4 +85,5 @@
     position: fixed;
     bottom: 0;
     left: 0;
+
 }
