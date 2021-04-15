@@ -32,9 +32,44 @@
     width: 35px;
     margin-left: 18px;
 }
-.homesidebar ul li:first-child{
+.homesidebar .nav-links ul li:first-child{
     border-left: 2px solid rgba(173, 255, 47, 1);
 }
+.fa-plus{
+    font-size: 1.5rem;
+    color: black;
+    padding: 12px;
+    background-color: rgba(163, 163, 163, 1);
+}
+.fa-info{
+    font-size: 0.8rem;
+    padding: 2px 4px;
+    border: 1px solid;
+    border-radius: 50%;
+}
+#persinfo img{
+    width: 30px;
+    padding: -3px;
+    background-color: rgba(163, 163, 163, 1);
+    border-radius: 50%;
+}
+#persinfo hr{
+    height: 2px;
+    background-color: rgba(248, 249, 250, 1);
+}
+#persinfo a{
+    font-size: 1.5rem;
+}
+#persinfo{
+   
+}
+#create{
+    font-size: 1.25rem;
+}
+#playlist li:not(:first-child){
+    padding-bottom: 0.75rem;
+}
+
 /* footer */
 .media_player{
     height: calc(100vh - 1010px);
