@@ -1,6 +1,7 @@
 body{
     height: 100vh;
     width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .shown{
     display: none;
@@ -93,7 +94,9 @@ main {
     overflow-y: auto;
 }
 /* footer */
+
 .media_player{
+    width: 100vw;
     height: 90px;
     background-color: rgba(40, 40, 40, 1);
     width: 100vw;
@@ -103,16 +106,30 @@ main {
 .media_player img{
     width: 45px;
 }
-.pregress{
-    width: 40px;
-    height: 2px;
+.progress_tot{
+    margin: 0px 15px;
+    width: 400px;
+    height: 5px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, #C1C1C1 50%, #5A5A5A 50%)
+}
+.vol_bar{
+    width: 150px;
+    height: 5px;
     border-radius: 5px;
     background-color: rgba(163, 163, 163, 1);
 }
-.vol_bar{
-    
-    width: 40px;
-    height: 2px;
-    border-radius: 5px;
-    background-color: rgba(163, 163, 163, 1);
+.playericons{
+    vertical-align: middle;
+}
+.volume i{
+    font-size: 12px;
+    padding-right: 18px;
+}
+.playericons i{
+    font-size: 15px;
+    padding: 0px 12px;
+}
+i.fa-play-circle{
+    font-size: 25px;
 }
