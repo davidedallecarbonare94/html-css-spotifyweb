@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify</title>
     <!-- Bootstrap CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- Font Awesome CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
     <!-- Css Links -->
-    <link rel="stylesheet" href="./assets/css/mediaquery.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/mediaquery.css">
+
 </head>
+
 <body>
     <!-- header -->
     <header>
         <div class="homesidebar">
             <div class="container d-flex flex-column pl-0 pr-0 justify-content-between">
                 <div id="upper">
-                    <div class="logo fluid-img justify-content-around pt-3 pl-3 d-none d-sm-block">
+                    <div class="logo fluid-img justify-content-around pt-3 pl-3 hidden">
                         <img src="./assets/img/logo.svg" alt="Spotify Logo">
                     </div>
-                    <div class="d-flex flex-column pt-4 nav-links nohide">
-                        <ul class="align-left pl-0">
-                            <li><a class="text-light d-none d-sm-block" href=""><img class="fluid-img" src="./assets/img/home.svg"
+                    <div class="fluid-img justify-content-around shown small-logo">
+                        <img src="./assets/img/logo-small.svg" alt="Small Logo">
+                    </div>
+                    <div class="d-flex flex-column pt-3 nav-links">
+                        <ul class="align-left pl-0 hidden">
+                            <li><a class="text-light" href=""><img class="fluid-img" src="./assets/img/home.svg"
                                         alt="Home Logo"> Home</a></li>
                             <li><a class="text-white-50" href=""><img class="fluid-img opacity"
                                         src="./assets/img/search.svg" alt="Search Icon"> Cerca</a></li>
@@ -32,35 +41,57 @@
                                         src="./assets/img/libreria.svg" alt="Library"> La tua libreria</a></li>
                         </ul>
                     </div>
-                    <div id="playlist" class="d-flex flex-column pt-4">
-                        <h6 class="text-uppercase pl-3 pb-1 m-0 justify-content-around align-left text-white">Playlist
-                        </h6>
-                        <ul class="align-left pl-3">
-                            <li class="d-flex pt-2 pb-2 pr-2">
-                                <a href="#" class="align-middle justify-content-around p-0">
-                                    <span class="square"><i
-                                            class="fas fa-plus align-middle justify-content-around"></i></span>
-                                    <span id="create" class="text-white-50 pl-1">Crea Playlist</span>
-                                </a>
-                            </li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
-                            <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                    <div class="d-flex flex-column nav-links">
+                        <ul class="align-left pl-0 shown">
+                            <li><a class="text-light hidden" href=""><img class="fluid-img" src="./assets/img/home.svg"
+                                        alt="Home Logo"></a></li>
+                            <li><a class="text-white-50" href=""><img class="fluid-img opacity"
+                                        src="./assets/img/search.svg" alt="Search Icon"></a></li>
+                            <li><a class="text-white-50" href=""><img class="fluid-img opacity"
+                                        src="./assets/img/libreria.svg" alt="Library"></a></li>
                         </ul>
+                    </div>
+                    <div class="hidden">
+                        <div id="playlist" class="d-flex flex-column pt-4 hidden">
+                            <h6 class="text-uppercase pl-3 pb-1 m-0 justify-content-around align-left text-white">
+                                Playlist
+                            </h6>
+                            <ul class="align-left pl-3">
+                                <li class="d-flex pt-2 pb-2 pr-2">
+                                    <a href="#" class="align-middle justify-content-around p-0">
+                                        <span class="square"><i
+                                                class="fas fa-plus align-middle justify-content-around"></i></span>
+                                        <span id="create" class="text-white-50 pl-1">Crea Playlist</span>
+                                    </a>
+                                </li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                                <li><a class="text-white-50" href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div id="persinfo" class="d-flex pl-3 mt-auto pb-3">
-                    <div id="lower">
-                        <div class="text-white-50"><i class="fas fa-info text-white-50"></i> Installa app</div>
-                        <div><a class="text-white" href=""><img src="./assets/img/profile.svg" alt="Profile Pic"> John Doe</a></div>
+                    <div id="lower" class="hidden">
+                        <div class="text-white-50 install pb-2"><i class="fas fa-info text-white-50 pr-1"></i> Installa
+                            app</div>
+                        <div class="pt-2"><a class="text-white" href=""><img src="./assets/img/profile.svg"
+                                    alt="Profile Pic"> John Doe</a></div>
                     </div>
-                </div>  
+                </div>
+                <div id="persinfo" class="d-flex">
+                    <div id="lower" class="shown">
+                        <div class="text-white-50 install pb-2"><i class="fas fa-info text-white-50"></i></div>
+                        <div class="pt-2"><a class="text-white" href=""><img src="./assets/img/profile.svg"
+                                    alt="Profile Pic"></a></div>
+                    </div>
+                </div>
             </div>
-            
+
         </div>
     </header>
     <!-- /header -->
@@ -78,4 +109,5 @@
 
 
 </body>
+
 </html>

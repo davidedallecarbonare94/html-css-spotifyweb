@@ -1,3 +1,13 @@
+body{
+    height: 100vh;
+    width: 100%;
+}
+.shown{
+    display: none;
+}
+.hidden{
+    display: inline-block;
+}
 /* color palette */
 .container{
     height: 100%;
@@ -45,7 +55,7 @@
     background-color: rgba(163, 163, 163, 1);
 }
 .fa-info{
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 2px 4px;
     border: 1px solid;
     border-radius: 50%;
@@ -70,20 +80,24 @@
 #playlist li:not(:first-child){
     padding-bottom: 0.75rem;
 }
-
+#playlist{
+    overflow-y: auto;
+}
+.install {
+    border-bottom: 1px solid white;
+}
 /* main */
 main {
     background-color: red;
-    height: 2000px;
+    height: calc(100vh - 90px); 
     overflow-y: auto;
 }
 /* footer */
 .media_player{
-    height: calc(100vh - 1010px);
+    height: 90px;
     background-color: rgba(40, 40, 40, 1);
     width: 100vw;
     position: fixed;
     bottom: 0;
-    left: 0;
 
 }
