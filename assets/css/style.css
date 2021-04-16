@@ -9,10 +9,11 @@ body{
 .hidden{
     display: inline-block;
 }
-/* color palette */
 .container{
     height: 100%;
 }
+/* color palette */
+
 .bg_mediaplayer{
     background-color: rgba(40, 40, 40, 1);
 }
@@ -89,9 +90,49 @@ body{
 }
 /* main */
 main {
-    background-color: red;
+    width: calc(100vw - 230px);
+    background-color: rgba(20, 25, 34, 1);
+    position: fixed;
+    top: 90px;
+    left: 230px;
     height: calc(100vh - 90px); 
     overflow-y: auto;
+}
+main nav li{
+    justify-content: space-around;
+    align-content: center;
+}
+.nav{
+    justify-content: space-around;
+}
+.nav-item {
+    padding:0px 12px;
+}
+.nav-item a{
+    padding: 0px;
+    font-size: 16px;
+}
+main h3{
+    font-weight: 600;
+}
+/* card section */
+.card {
+    background-color: transparent!important;
+    border: none!important;
+}
+.card-body{
+    padding: 0px 3px!important;
+}
+.card-title{
+    color: white;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 1.2vw;
+}
+.card-text{
+    text-align: center;
+    font-size: 0.9vw;
 }
 /* footer */
 
