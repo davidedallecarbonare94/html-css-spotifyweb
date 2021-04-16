@@ -99,5 +99,20 @@ main {
     width: 100vw;
     position: fixed;
     bottom: 0;
-
+}
+.media_player img{
+    width: 45px;
+}
+.pregress{
+    width: 40px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(163, 163, 163, 1);
+}
+.vol_bar{
+    
+    width: 40px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: rgba(163, 163, 163, 1);
 }
