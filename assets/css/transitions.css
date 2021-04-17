@@ -23,15 +23,40 @@
 .lilicons i:hover{
     color: white!important;
 }
-.fa-play-circle{
+.player .fa-play-circle{
     transition: all 0s;
 }
-.fa-play-circle:hover{
+.player .fa-play-circle:hover{
     font-size: 33px;
 }
-.card-img-top{
-    transition: all 0s;
+/* card test */
+.card-hover{
+    position: relative;
 }
-.card-img-top:hover{
-    filter: opacity(1);
+.card-img-top{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0s;
+    backface-visibility: hidden;
+}
+.play-icon{
+    transition: all 0s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.play-icon i{
+    font-size: 50px;
+}
+.card-hover:hover .card-img-top {
+    opacity: 0.3;
+}
+  
+.card-hover:hover .play-icon {
+    opacity: 1;
 }
