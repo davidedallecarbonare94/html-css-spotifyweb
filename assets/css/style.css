@@ -43,6 +43,7 @@ body{
     display: block;
     font-size: 16px;
 }
+
 .homesidebar ul li a img{
     width: 35px;
     margin-left: 18px;
@@ -88,9 +89,10 @@ body{
 .install {
     border-bottom: 1px solid white;
 }
+
 /* main */
 main {
-    width: calc(100vw - 230px);
+    width: 100vw;
     background-color: rgba(20, 25, 34, 1);
     position: fixed;
     top: 90px;
@@ -128,11 +130,37 @@ main h3{
     font-weight: 600;
     text-align: center;
     padding-top: 15px;
-    font-size: 1.2vw;
 }
 .card-text{
     text-align: center;
-    font-size: 0.9vw;
+}
+/* upgrade section */
+.upgrade {
+    width: calc(100vw - 230px);
+    background-color: rgba(8, 11, 18, 1);
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 230px;
+    line-height: 90px;
+}
+.upgrade .upg_text{
+    text-align: right;
+    vertical-align: middle;
+    padding-right: 10px;
+}
+.upgrade .upg_text a {
+    font-weight: 600;
+    font-size: 12px;
+    border: 1px solid white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    transition: all 0s;
+}
+.upgrade .upg_text a:hover{
+    font-size: 14px;
+    padding: 14px 37px;
+
 }
 /* footer */
 

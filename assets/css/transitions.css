@@ -1,0 +1,37 @@
+/* homesidebar */
+.homesidebar li a{
+    transition: all 0s;
+}
+.homesidebar li a:hover{
+    color: white!important;
+}
+.fa-plus{
+    transition: all 0s;
+}
+.fa-plus:hover{
+    background-color: white;
+}
+#create {
+    transition: all 0s;
+}
+#create:hover{
+    color: white!important;
+}
+.lilicons i{
+    transition: all 0s;
+}
+.lilicons i:hover{
+    color: white!important;
+}
+.fa-play-circle{
+    transition: all 0s;
+}
+.fa-play-circle:hover{
+    font-size: 33px;
+}
+.card-img-top{
+    transition: all 0s;
+}
+.card-img-top:hover{
+    filter: opacity(1);
+}
