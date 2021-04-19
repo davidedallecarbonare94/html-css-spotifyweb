@@ -103,7 +103,6 @@ main {
     overflow-y: auto;
 }
 
-
 .nav-item {
     padding:0px 12px;
 }
@@ -118,6 +117,11 @@ main h3{
 .card {
     background-color: transparent!important;
     border: none!important;
+    margin: 4px 2px;
+}
+.card-img, .card-img-top {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
 }
 .card-body{
     padding: 0px 3px!important;
