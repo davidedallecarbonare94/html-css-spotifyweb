@@ -66,3 +66,11 @@ main .nav li a{
 main .nav ul li a:hover{
     color: white!important;
 }
+.prog_lightgrey:hover,
+.vol_bar_light:hover{
+    background-color: rgba(173, 255, 47, 1);
+}
+.prog_lightgrey:hover::after,
+.vol_bar_light:hover::after{
+    content:"\f111";
+}

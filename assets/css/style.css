@@ -38,6 +38,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    overflow-y: auto;
 }
 
 .homesidebar img {
@@ -110,7 +111,11 @@ body {
     border-bottom: 1px solid white;
     padding-right: 6rem;
 }
-
+.create{
+    height: calc(100vh - 540px);
+    overflow-y: auto;
+    min-height: 200px;
+}
 /* main */
 main {
     width: calc(100% - 230px);
@@ -119,7 +124,7 @@ main {
     top: 89px;
     left: 229px;
     height: calc(100vh - 90px);
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .to_evidence {
@@ -197,7 +202,7 @@ main h3 {
     height: 90px;
     position: fixed;
     top: 0;
-    left: 230px;
+    left: 229px;
     line-height: 90px;
 }
 
@@ -237,32 +242,39 @@ main h3 {
     min-width: 45px;
 }
 
-.prog_bar {
-    position: relative;
-}
-
-.progress_mid {
-    margin: 0px 15px;
-    width: 15%;
-    height: 5px;
-    border-radius: 5px;
-    background-color: rgba(173, 255, 47, 1);
-}
-
 .progress_tot {
     margin: 0px 15px;
     width: 40%;
     height: 5px;
     border-radius: 5px;
     background-color: #5A5A5A;
-
+    position: relative;
 }
-
-.vol_bar {
-    width: 60px;
+.prog_lightgrey {
+    margin: 0px;
+    width: 20%;
     height: 5px;
     border-radius: 5px;
-    background-color: rgba(163, 163, 163, 1);
+    background-color:rgba(193, 193, 193, 1);
+    position: absolute;
+    transition: all 0s;
+}
+
+.vol_bar_tot {
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #5A5A5A;
+    position: relative;
+    
+}
+.vol_bar_light{
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(193, 193, 193, 1);
+    position: absolute;
+    transition: all 0s;
 }
 
 .playericons {
