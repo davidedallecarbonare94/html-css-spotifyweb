@@ -83,7 +83,9 @@ body{
 #playlist li:not(:first-child){
     padding-bottom: 0.75rem;
 }
-#playlist{
+
+#playover{
+    height: 80%;
     overflow-y: auto;
 }
 .install {
@@ -92,21 +94,16 @@ body{
 
 /* main */
 main {
-    width: 100vw;
+    width: calc(100vw - 230px);
     background-color: rgba(20, 25, 34, 1);
     position: fixed;
-    top: 90px;
-    left: 230px;
+    top: 89px;
+    left: 229px;
     height: calc(100vh - 90px); 
     overflow-y: auto;
 }
-main nav li{
-    justify-content: space-around;
-    align-content: center;
-}
-.nav{
-    justify-content: space-around;
-}
+
+
 .nav-item {
     padding:0px 12px;
 }
