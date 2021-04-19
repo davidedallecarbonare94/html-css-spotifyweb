@@ -1,30 +1,37 @@
-body{
+body {
     height: 100vh;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.shown{
+
+.shown {
     display: none;
 }
-.hidden{
+
+.hidden {
     display: inline-block;
 }
-.container{
+
+.container {
     height: 100%;
 }
+
 /* color palette */
 
-.bg_mediaplayer{
+.bg_mediaplayer {
     background-color: rgba(40, 40, 40, 1);
 }
-.greenmarker{
+
+.greenmarker {
     color: rgba(173, 255, 47, 1);
 }
-.opacity{
+
+.opacity {
     opacity: 50%;
 }
+
 /* header */
-.homesidebar{
+.homesidebar {
     height: calc(100vh - 90px);
     background-color: black;
     width: 230px;
@@ -32,109 +39,157 @@ body{
     top: 0;
     left: 0;
 }
-.homesidebar img{
+
+.homesidebar img {
     width: 150px;
 }
-.homesidebar  ul  li{
+
+.homesidebar ul li {
     list-style: none;
 }
-.homesidebar li a{
+
+.homesidebar li a {
     padding-bottom: 5px;
     display: block;
     font-size: 16px;
 }
 
-.homesidebar ul li a img{
+.homesidebar ul li a img {
     width: 35px;
     margin-left: 18px;
 }
-.homesidebar .nav-links ul li:first-child{
-    border-left: 2px solid rgba(173, 255, 47, 1);
+
+.homesidebar .nav-links ul li:first-child {
+    border-left: 3px solid rgba(173, 255, 47, 1);
 }
-.fa-plus{
+
+.fa-plus {
     font-size: 1.5rem;
     color: black;
     padding: 12px;
     background-color: rgba(163, 163, 163, 1);
 }
-.fa-info{
+
+.fa-info {
     font-size: 0.7rem;
     padding: 2px 4px;
     border: 1px solid;
     border-radius: 50%;
 }
-#persinfo img{
+
+#persinfo img {
     width: 30px;
     padding: -3px;
     background-color: rgba(163, 163, 163, 1);
     border-radius: 50%;
 }
-#persinfo hr{
+
+#persinfo hr {
     height: 2px;
     background-color: rgba(248, 249, 250, 1);
 }
-#persinfo a{
+
+#persinfo a {
     font-size: 1.5rem;
 }
 
-#create{
+#create {
     font-size: 1.25rem;
 }
-#playlist li:not(:first-child){
+
+#playlist li {
     padding-bottom: 0.75rem;
 }
 
-#playover{
+#playover {
     height: 80%;
     overflow-y: auto;
 }
+
 .install {
     border-bottom: 1px solid white;
+    padding-right: 6rem;
 }
 
 /* main */
 main {
-    width: calc(100vw - 230px);
+    width: calc(100% - 230px);
     background-color: rgba(20, 25, 34, 1);
     position: fixed;
     top: 89px;
     left: 229px;
-    height: calc(100vh - 90px); 
+    height: calc(100vh - 90px);
     overflow-y: auto;
 }
 
+.to_evidence {
+    position: relative;
+}
+
+#evidence {
+    background-color: rgba(173, 255, 47, 1);
+    height: 2px;
+    width: 40px;
+    position: absolute;
+    bottom: -7px;
+    left: 41px;
+}
+
 .nav-item {
-    padding:0px 12px;
+    padding: 0px 17px;
 }
-.nav-item a{
+
+.nav-item a {
     padding: 0px;
-    font-size: 16px;
+    font-size: 14px;
 }
-main h3{
+
+main h3 {
     font-weight: 600;
 }
+
 /* card section */
 .card {
-    background-color: transparent!important;
-    border: none!important;
+    background-color: transparent !important;
+    border: none !important;
     margin: 4px 2px;
+    width: 180px;
+    margin: 0px 8px 8px 0px;
 }
-.card-img, .card-img-top {
+
+.card-img,
+.card-img-top {
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
 }
-.card-body{
-    padding: 0px 3px!important;
+
+.card-img-top {
+    width: 100%;
+    height: auto;
 }
-.card-title{
+
+.card-body {
+    padding: 0px 3px !important;
+}
+
+.card-title {
     color: white;
     font-weight: 600;
     text-align: center;
     padding-top: 15px;
 }
-.card-text{
+
+.card-text {
+    font-size: 14px;
     text-align: center;
 }
+
+#popular .card-img-top {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+}
+
 /* upgrade section */
 .upgrade {
     width: calc(100vw - 230px);
@@ -145,11 +200,13 @@ main h3{
     left: 230px;
     line-height: 90px;
 }
-.upgrade .upg_text{
+
+.upgrade .upg_text {
     text-align: right;
     vertical-align: middle;
     padding-right: 10px;
 }
+
 .upgrade .upg_text a {
     font-weight: 600;
     font-size: 12px;
@@ -158,48 +215,70 @@ main h3{
     border-radius: 50px;
     transition: all 0s;
 }
-.upgrade .upg_text a:hover{
+
+.upgrade .upg_text a:hover {
     font-size: 14px;
     padding: 14px 37px;
 
 }
+
 /* footer */
 
-.media_player{
-    width: 100vw;
+.media_player {
     height: 90px;
     background-color: rgba(40, 40, 40, 1);
-    width: 100vw;
+    width: 100%;
     position: fixed;
     bottom: 0;
 }
-.media_player img{
+
+.media_player img {
     width: 45px;
+    min-width: 45px;
 }
-.progress_tot{
+
+.prog_bar {
+    position: relative;
+}
+
+.progress_mid {
     margin: 0px 15px;
-    width: 400px;
+    width: 15%;
     height: 5px;
     border-radius: 5px;
-    background: linear-gradient(90deg, #C1C1C1 50%, #5A5A5A 50%)
+    background-color: rgba(173, 255, 47, 1);
 }
-.vol_bar{
-    width: 150px;
+
+.progress_tot {
+    margin: 0px 15px;
+    width: 40%;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #5A5A5A;
+
+}
+
+.vol_bar {
+    width: 60px;
     height: 5px;
     border-radius: 5px;
     background-color: rgba(163, 163, 163, 1);
 }
-.playericons{
+
+.playericons {
     vertical-align: middle;
 }
-.volume i{
+
+.volume i {
     font-size: 12px;
     padding-right: 18px;
 }
-.playericons i{
+
+.playericons i {
     font-size: 15px;
     padding: 0px 12px;
 }
-i.fa-play-circle{
+
+i.fa-play-circle {
     font-size: 25px;
 }

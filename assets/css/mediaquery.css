@@ -2,12 +2,23 @@
     .homesidebar{
         width: 50px;
     }
-    .main{
-        height: 100vh;
-        width: calc(100vw - 90px);
+    main {
+        width: calc(100% - 50px);
+        background-color: rgba(20, 25, 34, 1);
         position: fixed;
-        top: 90px;
-        left: 50px;
+        top: 89px;
+        left: 49px;
+        height: calc(100vh - 90px);
+        overflow-y: auto;
+    }
+    .upgrade {
+        width: calc(100vw - 50px);
+        background-color: rgba(8, 11, 18, 1);
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 49px;
+        line-height: 90px;
     }
     .hidden{
         display: none;
@@ -46,4 +57,43 @@
     .install{
         border: none;
     }
+    .media-body{
+        padding-right: 5px;
+    }
+    .volume i{
+        padding-right: 15px;
+    }
+    .vol_bar{
+        width: 20px;
+    }
+    .player{
+        flex-grow: none;
+    }
+    
+    main .nav ul li{
+        margin-bottom: 40px;
+    }
+    .card{
+        width: 45%;
+        margin-bottom: 15px;
+    }
+    .song_selection{
+        padding-left: 15px!important;
+    }
+
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+    main .nav ul li{
+        margin: 15px;
+    }
+    .card{
+        width: 45%;
+    }
+    
+}
+@media screen and (min-width: 768.98px) and (max-width: 991.98px) {
+    .card {
+        width: 20%;
+    }
+    
 }

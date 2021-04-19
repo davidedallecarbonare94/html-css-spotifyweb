@@ -60,3 +60,9 @@
 .card-hover:hover .play-icon {
     opacity: 1;
 }
+main .nav li a{
+    transition: all 0s;
+}
+main .nav ul li a:hover{
+    color: white!important;
+}
